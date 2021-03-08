@@ -82,6 +82,7 @@ class NetGSM
         else if (Str::startsWith($name, "set")) {
             $variable = Str::of($name)->substr(3)->kebab()->replace("-", "_")->__toString();
             $this->variables[$variable] = $arguments[0];
+            return $arguments[0];
         }
         else {
             return $this->$name($arguments);

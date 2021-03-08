@@ -1,0 +1,47 @@
+{
+  "name": "isaeken/netgsm",
+  "description": "netgsm library",
+  "type": "library",
+  "version": "1.0",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "readme": "README.md",
+  "prefer-stable": true,
+  "homepage": "https://isaeken.com.tr",
+  "keywords": ["netgsm", "library"],
+  "support": {
+    "source": "https://github.com/isaeken/auto-installer",
+    "email": "hello@isaeken.com.tr"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "IsaEken\\NetGSM\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "IsaEken\\NetGSM\\Test\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "isaeken",
+      "email": "hello@isaeken.com.tr",
+      "homepage": "https://isaeken.com.tr",
+      "role": "Founder"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.0",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "guzzlehttp/guzzle": "^7.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0",
+    "symfony/var-dumper": "^5.1"
+  }
+}
